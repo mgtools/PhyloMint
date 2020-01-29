@@ -1,2 +1,2 @@
-# Mint
-Pathway-based and phylogenetically adjustedquantification of competition and cooperation betweenmicrobial species
+# pMint
+Pathway-based and phylogenetically adjusted quantification of competition and cooperation between microbial species
