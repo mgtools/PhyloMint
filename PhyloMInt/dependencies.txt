@@ -1,0 +1,11 @@
+Python >3.5
+    -pandas
+    -numpy
+    -networkx
+    -libsmbl
+FragGeneScan - if predicting starting from genome sequences 
+CarveMe 
+    -DIAMOND
+    -IBM CPLEX optimizer
+
+
