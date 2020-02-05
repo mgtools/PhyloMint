@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 # Libraries
-from libsbml import *
+from libsbml import readSBML
 
 # Local modules
 from lib import BuildGraphNetX, CalculateIndexes
