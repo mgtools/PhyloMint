@@ -147,7 +147,7 @@ if __name__ == '__main__' :
     parser.add_argument('-d', '--dirr', help = '(Optional) Path to directory with SBML files. Will compute all pairwise comparisons & use dynamic programming for computational speed-up.', default=None)
     parser.add_argument('-o', '--outfile', help = 'Output tsv file name.')
     parser.add_argument('--outdir', help = 'Outdir path. default = cwd', default = os.getcwd()) 
-    parser.add_argument('--maxcc', help = 'Maximum number of nodes in a strongly connected component (SCC) to consider in SeedSet', default=5)
+    parser.add_argument('--maxcc', help = 'Maximum number of nodes in a strongly connected component (SCC) to consider in SeedSet. (default = 5)', default=5)
     parser.add_argument('--fraggenescan', help = 'path to FragGeneScan. (default: lib/FragGeneScan1.30/FragGeneScan)', default = f'{os.path.dirname(os.path.abspath(__file__))}/lib/FragGeneScan1.30/FragGeneScan')
     parser.add_argument('--version', action='version',
                     version='%(prog)s {version}'.format(version=__version__))

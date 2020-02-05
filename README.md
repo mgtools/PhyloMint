@@ -48,7 +48,7 @@ optional arguments:
                         Output file name.
   --outdir OUTDIR       Outdir path. default = cwd
   --maxcc MAXCC         Maximum number of nodes in a strongly connected
-                        component (SCC) to consider in SeedSet
+                        component (SCC) to consider in SeedSet. (default = 5)
   --fraggenescan FRAGGENESCAN
                         path to FragGeneScan. (default:
                         lib/FragGeneScan1.30/FragGeneScan)
