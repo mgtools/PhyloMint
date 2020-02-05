@@ -131,7 +131,7 @@ if __name__ == '__main__' :
     parser.add_argument('-j', '--infile2', help = 'Input SBML file (XML format) organism B.')
     parser.add_argument('-c', '--carveme', help = '(Optional) Path to fasta files. Will run FragGeneScan, predict genes to be used as CarveMe output.', default=None)
     parser.add_argument('-d', '--dirr', help = '(Optional) Path to directory with SBML files. Will compute all pairwise comparisons & use dynamic programming for computational speed-up.', default=None)
-    parser.add_argument('-o', '--outfile', help = 'Output file name.', required=True)
+    parser.add_argument('-o', '--outfile', help = 'Output tsv file name.')
     parser.add_argument('--outdir', help = 'Outdir path. default = cwd', default = os.getcwd()) 
     parser.add_argument('--maxcc', help = 'Maximum number of nodes in a strongly connected component (SCC) to consider in SeedSet', default=5)
     parser.add_argument('--fraggenescan', help = 'path to FragGeneScan. (default: lib/FragGeneScan1.30/FragGeneScan)', default = f'{os.path.dirname(os.path.abspath(__file__))}/lib/FragGeneScan1.30/FragGeneScan')
@@ -144,9 +144,12 @@ if __name__ == '__main__' :
         # get indexes
         output = singleFile(args.infile1, args.infile2)
 
-        # write to outfile
-        with open(f'{args.outdir}/{args.outfile}', 'a+') as outfile:
-            outfile.write(output)
+        # print output
+        print(output)
+
+        ## write to outfile
+        #with open(f'{args.outdir}/{args.outfile}', 'a+') as outfile:
+        #    outfile.write(output)
 
     # raise exception, only allow start from Carveme or SBML.
     elif args.dirr != None and args.carveme != None:
