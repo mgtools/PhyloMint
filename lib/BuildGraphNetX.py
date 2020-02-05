@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from libsbml import *
+from libsbml import readSBML
 import networkx as nx
 
 def buildDG(sbml):
