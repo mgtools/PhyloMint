@@ -1,11 +1,25 @@
 #!/usr/bin/python3
+
+# Built-in/Generic Imports
 import sys
 import os
 import subprocess
-from pathlib import Path
-from libsbml import *
 from argparse import ArgumentParser
+from pathlib import Path
+
+# Libraries
+from libsbml import *
+
+# Local modules
 from lib import BuildGraphNetX, CalculateIndexes
+
+__author__ = "Tony J. Lam"
+__credits__ = "Tony J. Lam, Moses Stamboulian, Wontack Han, Yuzhen Ye"
+__version__ = "0.1.0"
+__maintainer__ = "Tony J. Lam"
+__email__ = "tjlam@indiana.edu"
+__status__ = "Development"
+
 
 def singleFile(infile1, infile2):
     '''
@@ -135,6 +149,8 @@ if __name__ == '__main__' :
     parser.add_argument('--outdir', help = 'Outdir path. default = cwd', default = os.getcwd()) 
     parser.add_argument('--maxcc', help = 'Maximum number of nodes in a strongly connected component (SCC) to consider in SeedSet', default=5)
     parser.add_argument('--fraggenescan', help = 'path to FragGeneScan. (default: lib/FragGeneScan1.30/FragGeneScan)', default = f'{os.path.dirname(os.path.abspath(__file__))}/lib/FragGeneScan1.30/FragGeneScan')
+    parser.add_argument('--version', action='version',
+                    version='%(prog)s {version}'.format(version=__version__))
     args = parser.parse_args()
 
 

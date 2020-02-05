@@ -52,6 +52,7 @@ optional arguments:
   --fraggenescan FRAGGENESCAN
                         path to FragGeneScan. (default:
                         lib/FragGeneScan1.30/FragGeneScan)
+  --version             show program's version number and exit
 ```
 
 ## Example Usage
@@ -79,6 +80,9 @@ PhyloMInt -d <path/SBML_files> --outdir <path/outdir> -o <PhyloMInt_output.tsv>
 ```
 PhyloMInt -c test/genomes --outdir test/ -o test/summary.tsv
 ```
+
+## Version History
+v0.1.0 Initial Upload
 
 ## Sources 
 1. [Levy, R., Carr, R., Kreimer, A., Freilich, S., Borenstein, E. "NetCooperate: a network-based tool for inferring host-microbe and microbe-microbe cooperation." *BMC Bioinformatics*, 2015.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0588-y)
