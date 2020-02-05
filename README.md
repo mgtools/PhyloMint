@@ -8,10 +8,10 @@ Takes input assembled genomes or genome scale metabolic reconstructions (GENREs)
 Dependencies required to be installed prior to running PhyloMInt.
 ```
 Python 3.5+
-    +Pandas
-    +Numpy
-    +NetworkX
-    +libsbml
+    - Pandas
+    - Numpy
+    - NetworkX
+    - libsbml
 FragGeneScan (included)
 CarveMe (requires DIAMOND aligner & IBM CPLEX optimizer)
 ```
