@@ -3,6 +3,8 @@ Pathway-based and phylogenetically adjusted quantification of competition and co
 
 Takes input assembled genomes or genome scale metabolic reconstructions (GENREs) in SBML format. Using our python implementation to calculate the metabolic complementarity index<sup>1</sup> and metabolic competition index<sup>2</sup>.
 
+\*Currently Under Review
+
 ## Getting Started
 ### Prerequisites & Dependencies
 Dependencies required to be installed prior to running PhyloMInt.
