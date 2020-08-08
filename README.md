@@ -9,7 +9,7 @@ Takes input assembled genomes or genome scale metabolic reconstructions (GENREs)
 ### Prerequisites & Dependencies
 Dependencies required to be installed prior to running PhyloMInt.
 ```
-Python 3.5+
+Python 3.6+
     - Pandas
     - Numpy
     - NetworkX
