@@ -13,7 +13,7 @@ Python 3.6+
     - Pandas
     - Numpy
     - NetworkX
-    - [`libsbml`](https://pypi.org/project/python-libsbml/)
+    - python-libsbml (https://pypi.org/project/python-libsbml/)
 FragGeneScan (included)
 CarveMe (requires DIAMOND aligner & IBM CPLEX optimizer)
 ```
