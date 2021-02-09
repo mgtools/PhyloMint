@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Built-in/Generic Imports
 import sys
@@ -151,6 +151,10 @@ if __name__ == '__main__' :
     parser.add_argument('--fraggenescan', help = 'path to FragGeneScan. (default: lib/FragGeneScan1.30/FragGeneScan)', default = f'{os.path.dirname(os.path.abspath(__file__))}/lib/FragGeneScan1.30/FragGeneScan')
     parser.add_argument('--version', action='version',
                     version='%(prog)s {version}'.format(version=__version__))
+    if len(sys.argv)==1:
+        parser.print_help()
+        # parser.print_usage() # for just the usage line
+        parser.exit()
     args = parser.parse_args()
 
 
