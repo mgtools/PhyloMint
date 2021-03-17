@@ -80,7 +80,7 @@ PhyloMInt -d <path/SBML_files> --outdir <path/outdir> -o <PhyloMInt_output.tsv>
 ## Test Example
 
 ```
-PhyloMInt -c test/genomes --outdir test/ -o test/summary.tsv
+PhyloMInt -c test/genomes --outdir test/ -o summary.tsv
 ```
 
 ## Version History
